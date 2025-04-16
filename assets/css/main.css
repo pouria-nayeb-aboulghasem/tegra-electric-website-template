@@ -68,6 +68,7 @@ a {
   text-decoration: none;
 }
 
+input,
 button {
   border: none;
   outline: none;
@@ -120,6 +121,20 @@ img {
 
 .swiper-pagination-bullet-active {
   background-color: gold;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: var(--fw-semi-bold);
+  padding: 1rem 1.5rem;
+  margin-top: var(--space-1);
+  transition: box-shadow 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 4px 32px hsla(230, 72%, 32%, 0.4);
 }
 
 /* header & nav */
@@ -271,7 +286,7 @@ img {
 }
 
 .header-right > * {
-  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .header-right button {
@@ -378,7 +393,8 @@ img {
   }
 
   .header .menu .dropdown.active > i {
-    background-color: hsla(0, 0%, 0%, 0.25);
+    background-color: #2d2b2c;
+    color: var(--white-color);
     transform: rotate(180deg);
   }
 
@@ -472,6 +488,166 @@ img {
 @media screen and (max-width: 1365px) {
   .main {
     max-width: 1365px;
+  }
+}
+
+/* search */
+/*=============== SEARCH ===============*/
+.search {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: hsla(230, 12%, 96%, 0.6);
+  backdrop-filter: blur(16px);
+  padding: 8rem 1.5rem;
+  transition: top 0.4s;
+}
+
+.search__form {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: var(--white-color);
+  border: 2px solid hsl(230, 50%, 90%);
+  padding-inline: 1rem;
+}
+
+.search__icon {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+.search__input {
+  width: 100%;
+  padding-block: 1rem;
+  background-color: var(--white-color);
+  color: var(--text-color);
+}
+
+.search__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Show search */
+.show-search {
+  top: 0;
+}
+
+/*=============== LOGIN ===============*/
+.login {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  z-index: 100;
+  background-color: hsla(230, 12%, 96%, 0.6);
+  backdrop-filter: blur(16px);
+  align-items: center;
+  padding: 1.5rem;
+  text-align: center;
+  transition: top 0.4s;
+}
+
+.login__form {
+  background-color: var(--white-color);
+  padding: 2rem 1.5rem;
+  border: 2px solid hsl(230, 50%, 90%);
+  row-gap: 1.25rem;
+}
+
+.login__title {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-3);
+}
+
+.login__group {
+  row-gap: 1.25rem;
+}
+
+.login__label {
+  display: block;
+  text-align: initial;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-bottom: 0.25rem;
+}
+
+.login__input {
+  width: 100%;
+  background-color: var(--white-color);
+  border: 2px solid hsl(230, 50%, 90%);
+  padding: 1rem;
+  color: var(--text-color);
+  text-align: left;
+  direction: ltr;
+}
+
+.login__signup,
+.login__forget {
+  display: block;
+  font-size: var(--small-font-size);
+}
+
+.login__signup {
+  margin-bottom: 0.5rem;
+}
+
+.login__signup a {
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+}
+
+.login__forget {
+  color: var(--first-color);
+  margin-bottom: 1.25rem;
+}
+
+.login__button {
+  width: 100%;
+  cursor: pointer;
+}
+
+.login__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+/* Show login */
+.show-login {
+  top: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .search__form {
+    width: 500px;
+    margin-inline: auto;
+  }
+
+  .login__form {
+    width: 400px;
+    justify-self: center;
+  }
+
+  .search__close,
+  .login__close {
+    width: max-content;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
   }
 }
 
