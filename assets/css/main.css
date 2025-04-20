@@ -1860,7 +1860,7 @@ select {
 
 .checkout__data {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   align-items: start;
   gap: 1.5rem;
 }
@@ -1932,6 +1932,12 @@ select {
   justify-content: space-between;
   margin-block: 1rem;
   color: #333;
+}
+
+@media screen and (min-width: 768px) {
+  .checkout__data {
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 /* footer */
