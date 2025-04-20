@@ -1477,7 +1477,7 @@ select {
 
 .contact__button {
   display: inline-block;
-  background-color: var(--primary-color);
+  background-color: var(--text-color);
   color: #fff;
   padding: 0.5rem 1rem;
   transition: 0.3s;
