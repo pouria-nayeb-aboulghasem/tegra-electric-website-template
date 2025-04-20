@@ -1366,20 +1366,11 @@ relate__code {
   margin-block: var(--space-2);
 }
 
-.about__data h6 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  line-height: 1.1;
-  font-size: 8rem;
-  color: rgba(0, 0, 0, 0.1);
-}
-
 .about__data p {
   color: #666;
   font-size: 0.85rem;
   margin-bottom: 0.75rem;
+  text-align: justify;
 }
 
 .about__img {
