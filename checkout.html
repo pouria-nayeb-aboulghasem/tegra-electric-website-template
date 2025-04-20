@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <!-- general -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- seo -->
+    <title> تگرا الکتریک </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h4>TegraShop</h4>
+            </div>
+
+            <nav class="menu">
+                <div class="head">
+                    <div class="logo">
+                        <h4>Logo</h4>
+                    </div>
+                    <button type="button" class="close-menu"></button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html">خانه</a>
+                    </li>
+                    <li class="dropdown">
+                        <button>دسته بندی ها</button>
+                        <i class="ri-arrow-down-s-line"></i>
+
+                        <ul class="sub-menu">
+                            <li class="dropdown">
+                                <a href="category.html">
+                                    <span> آینه هوشمند </span>
+                                </a>
+                                <i class="ri-arrow-down-s-line"></i>
+
+                                <ul class="sub-menu sub-menu-left">
+                                    <li>
+                                        <a href="category.html">
+                                            <span>کلید لمسی آینه</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>کلید حرکتی</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>کلیدهای بلوتوثی</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>یدهای ضد بخار</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="category.html">
+                                    <span>کابینت هوشمند</span>
+                                </a>
+                                <i class="ri-arrow-down-s-line"></i>
+
+                                <ul class="sub-menu sub-menu-left">
+                                    <li>
+                                        <a href="category.html">
+                                            <span>لمسی و زیر سطحی کابینت</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>سنسور درب کابینت</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>روشنایی کابینت</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="category.html">
+                                    <span> تجهیزات نورپردازی و روشنایی </span>
+                                </a>
+                                <i class="ri-arrow-down-s-line"></i>
+
+                                <ul class="sub-menu sub-menu-left">
+                                    <li>
+                                        <a href="category.html">
+                                            <span>ریسه ها</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>سوکت ها</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>ترمینال ها</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html#blog">بلاگ</a>
+                    </li>
+                    <li>
+                        <a href="about.html">درباره ما</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">تماس با ما</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <button type="button" id="search-button">
+                    <i class="ri-search-2-line"></i>
+                </button>
+                <button type="button" id="login-button">
+                    <i class="ri-login-box-line"></i>
+                </button>
+                <a href="cart.html" id="cart-button">
+                    <span class="cart__badge">2</span>
+                    <i class="ri-shopping-cart-line"></i>
+                </a>
+                <button id="open-menu" type="button" class="open-menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="dropdown__overlay"></div>
+
+    <div class="search" id="search-content">
+        <form class="search__form">
+            <i class="ri-search-line search-icon"></i>
+            <input type="search" placeholder="نام قطعه یا کد را جستجو کنید..." name="query" class="search__input" />
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+
+        <ul class="search__list">
+            <li class="search__item">
+                <a href="#" class="search__link">آینه هوشمند</a>
+            </li>
+            <li class="search__item">
+                <a href="#" class="search__link">کابینت هوشمند</a>
+            </li>
+            <li class="search__item">
+                <a href="#" class="search__link">تجهیزات نورپردازی و روشنایی </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="login" id="login-content">
+        <form class="login__form grid">
+            <h3 class="login__title">ورود/ثبت نام</h3>
+
+            <div class="login__group">
+                <div>
+                    <label for="login-email" class="login__label">شماره تماس</label>
+                    <input type="tel" placeholder="09xxxxxxxx" id="login-email" class="login__input" />
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" class="button login__button">
+                    دریافت رمز یکبار مصرف
+                </button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <main id="main" class="main">
+
+        <div class="checkout">
+            <div class="checkout__container container">
+                <div class="checkout__content">
+
+                    <nav class="breadcrumb">
+                        <ul class="breadcrumb__list">
+                            <li class="breadcrumb__item">
+                                <a href="index.html" class="breadcrumb__link">خانه</a>
+                            </li>
+                            <li class="breadcrumb__item">
+                                <a href="cart.html" class="breadcrumb__link">سبد خرید</a>
+                            </li>
+                            <li class="breadcrumb__item">
+                                تکمیل اطلاعات و پرداخت
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="checkout__interaction">
+
+                        <form class="checkout__form" autocomplete="off">
+                            <div class="checkout__data">
+
+                                <div class="checkout__profile">
+                                    <h1 class="checkout__title">
+                                        تکمیل اطلاعات و پرداخت
+                                    </h1>
+
+                                    <div class="contact__group">
+                                        <label for="name" class="contact__label">نام و نام خانوادگی</label>
+                                        <input type="text" class="contact_input" id="name">
+                                    </div>
+
+                                    <div class="contact__group">
+                                        <label for="phonenumber" class="contact__label">کد پستی</label>
+                                        <input type="text" class="contact_input" id="phonenumber">
+                                    </div>
+
+                                    <div class="contact__group">
+                                        <label for="description" class="contact__label">آدرس</label>
+                                        <textarea type="text" class="contact_input" rows="6"
+                                            id="description"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="checkout__method">
+
+                                    <ul class="checkout__list">
+                                        <li class="checkout__item">
+                                            <input type="radio" name="shipping" id="post" checked>
+                                            <label for="post" class="checkout__label checkout__label--center">
+                                                <i class="ri-truck-line"></i>
+                                                <span>پست</span>
+                                            </label>
+                                        </li>
+                                        <li class="checkout__item">
+                                            <input type="radio" name="shipping" id="present">
+                                            <label for="present" class="checkout__label checkout__label--center">
+                                                <i class="ri-user-line"></i>
+                                                <span>حضوری</span>
+                                            </label>
+                                        </li>
+
+                                    </ul>
+
+                                    <hr />
+
+                                    <div class="checkout__purchase">
+                                        <span>مبلغ پرداختی</span>
+                                        <span>60,000 تومان</span>
+                                    </div>
+
+                                    <button type="submit" class="checkout__button checkout__button--block">
+                                        ارجاع به درگاه پرداخت
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <a href="#" id="scroll-up" class="scrollup">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <a href="tel:09120464609" id="phone" class="phone">
+        <i class="ri-phone-line"></i>
+    </a>
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+
+                <section class="footer__section">
+                    <h4 class="footer__title">خدمات مشتری</h4>
+
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">راهنمای خرید</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">تماس با ما</a>
+
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">ارسال تیکت</a>
+
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">سیاست و قوانین</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="footer__section">
+                    <h4 class="footer__title">درباره ما</h4>
+
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">درباره تگرا</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">اخبار و اطلاعیه</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">فرصت شغلی</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="footer__section">
+                    <h4 class="footer__title">فروش</h4>
+
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">گروه محصولات</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">عمده فروشی</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">مشاوره پیش از فروش</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="footer__data">
+                    <img src="" alt="" class="footer__img">
+
+                    <p class="footer__description">
+                        <i class="ri-map-pin-line"></i>
+                        <span>کرج، جاده ماهدشت، مرکز آموزش عالی امام خمینی</span>
+                    </p>
+                    <hr />
+                    <p class="footer__description">
+                        <i class="ri-customer-service-2-fill"></i> <span>02692108457</span>
+                    </p>
+                    <p class="footer__description">
+                        <i class="ri-phone-line"></i> <span>09120464609</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="footer__copyright">
+                <p>&copy; تمام حقوق مادی و معنوی محفوظ است</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

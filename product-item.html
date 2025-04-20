@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <!-- general -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- seo -->
+    <title> تگرا الکتریک </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h4>TegraShop</h4>
+            </div>
+
+            <nav class="menu">
+                <div class="head">
+                    <div class="logo">
+                        <h4>Logo</h4>
+                    </div>
+                    <button type="button" class="close-menu"></button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html">خانه</a>
+                    </li>
+                    <li class="dropdown">
+                        <button>دسته بندی ها</button>
+                        <i class="ri-arrow-down-s-line"></i>
+
+                        <ul class="sub-menu">
+                            <li class="dropdown">
+                                <a href="category.html">
+                                    <span> آینه هوشمند </span>
+                                </a>
+                                <i class="ri-arrow-down-s-line"></i>
+
+                                <ul class="sub-menu sub-menu-left">
+                                    <li>
+                                        <a href="category.html">
+                                            <span>کلید لمسی آینه</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>کلید حرکتی</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>کلیدهای بلوتوثی</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>یدهای ضد بخار</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="category.html">
+                                    <span>کابینت هوشمند</span>
+                                </a>
+                                <i class="ri-arrow-down-s-line"></i>
+
+                                <ul class="sub-menu sub-menu-left">
+                                    <li>
+                                        <a href="category.html">
+                                            <span>لمسی و زیر سطحی کابینت</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>سنسور درب کابینت</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>روشنایی کابینت</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="category.html">
+                                    <span> تجهیزات نورپردازی و روشنایی </span>
+                                </a>
+                                <i class="ri-arrow-down-s-line"></i>
+
+                                <ul class="sub-menu sub-menu-left">
+                                    <li>
+                                        <a href="category.html">
+                                            <span>ریسه ها</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>سوکت ها</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            <span>ترمینال ها</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html#blog">بلاگ</a>
+                    </li>
+                    <li>
+                        <a href="about.html">درباره ما</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">تماس با ما</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <button type="button" id="search-button">
+                    <i class="ri-search-2-line"></i>
+                </button>
+                <button type="button" id="login-button">
+                    <i class="ri-login-box-line"></i>
+                </button>
+                <a href="cart.html" id="cart-button">
+                    <span class="cart__badge">2</span>
+                    <i class="ri-shopping-cart-line"></i>
+                </a>
+                <button id="open-menu" type="button" class="open-menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="dropdown__overlay"></div>
+
+    <div class="search" id="search-content">
+        <form class="search__form">
+            <i class="ri-search-line search-icon"></i>
+            <input type="search" placeholder="نام قطعه یا کد را جستجو کنید..." name="query" class="search__input" />
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+
+        <ul class="search__list">
+            <li class="search__item">
+                <a href="#" class="search__link">آینه هوشمند</a>
+            </li>
+            <li class="search__item">
+                <a href="#" class="search__link">کابینت هوشمند</a>
+            </li>
+            <li class="search__item">
+                <a href="#" class="search__link">تجهیزات نورپردازی و روشنایی </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="login" id="login-content">
+        <form class="login__form grid">
+            <h3 class="login__title">ورود/ثبت نام</h3>
+
+            <div class="login__group">
+                <div>
+                    <label for="login-email" class="login__label">شماره تماس</label>
+                    <input type="tel" placeholder="09xxxxxxxx" id="login-email" class="login__input" />
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" class="button login__button">
+                    دریافت رمز یکبار مصرف
+                </button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <main id="main" class="main">
+
+        <div class="product">
+            <div class="product__container container">
+                <div class="product__content">
+
+                    <nav class="breadcrumb">
+                        <ul class="breadcrumb__list">
+                            <li class="breadcrumb__item">
+                                <a href="index.html" class="breadcrumb__link">خانه</a>
+                            </li>
+                            <li class="breadcrumb__item">
+                                <a href="category.html" class="breadcrumb__link">آینه هوشمند</a>
+                            </li>
+                            <li class="breadcrumb__item">
+                                قطعه کپی سیاه سفید
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="product__data">
+                        <div class="product__gallery">
+                            <figure class="product__figure">
+                                <img src="assets/imgs/products/resepberry-pi.png" alt="" class="product__img">
+                            </figure>
+
+                            <ul class="product__list">
+                                <li class="product__item active">
+                                    <img src="assets/imgs/products/resepberry-pi.png" alt=""
+                                        class="product__img product__img--thumbnail">
+                                </li>
+                                <li class="product__item">
+                                    <img src="assets/imgs/products/resepberry-pi.png" alt=""
+                                        class="product__img product__img--thumbnail">
+                                </li>
+                                <li class="product__item">
+                                    <img src="assets/imgs/products/resepberry-pi.png" alt=""
+                                        class="product__img product__img--thumbnail">
+                                </li>
+                            </ul>
+                        </div>
+
+                        <section class="product__info">
+                            <h1 class="product__title">قطعه کپی سیاه سفید</h1>
+                            <p class="product__code">TGR-1015</p>
+
+                            <p class="product__price">14,500 تومان</p>
+
+                            <ul>
+                                <li>
+                                    <span class="product__name">خروجی</span>
+                                    <span class="product__value">12 ولت 5 آمپر</span>
+                                </li>
+                                <li>
+                                    <span class="product__name">ولتاژ ورودی</span>
+                                    <span class="product__value">12 ولت</span>
+                                </li>
+                                <li>
+                                    <span class="product__name">گارانتی</span>
+                                    <span class="product__value">6 ماه تعویض و 5 سال پشتیبانی</span>
+                                </li>
+                                <li>
+                                    <span class="product__name">رنگ</span>
+                                    <span class="product__value">سبز آبی</span>
+                                </li>
+                                <li>
+                                    <span class="product__name">سایر</span>
+                                    <span class="product__value">
+                                        حساسیت سنسور تا فاصله 30 میلیمتر دارای سوکت ورودی اداپتور قابل اجرا زیر
+                                        انواع سنگ، چوب، پی‌وی‌سی، ام‌دی‌اف، کناف و سایر اجسام غیر رسانا با ضخامت
+                                        کمتر از 3 سانت </span>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <div class="product__order">
+
+                            <table class="table">
+                                <caption>خرید بیشتر از 50 محصول مشمول تخفیف می شود</caption>
+                                <tr>
+                                    <th>تعداد</th>
+                                    <th>قیمت واحد</th>
+                                </tr>
+                                <tr>
+                                    <td>1 - 50</td>
+                                    <td>145,000 تومان</td>
+                                </tr>
+                                <tr>
+                                    <td>51 +</td>
+                                    <td>135,000 تومان</td>
+                                </tr>
+                            </table>
+
+                            <div class="product__cart">
+
+                                <div class="product__count">
+                                    <button class="product__button">-</button>
+                                    <input type="text" class="product__input" value="1" data-count="1">
+                                    <button class="product__button">+</button>
+                                </div>
+
+                                <button class="product__button product__button--block">افزودن به سبد</button>
+
+                            </div>
+
+                            <div class="product__tag">
+                                <span>برچسب ها</span>
+                                <ul class="product__label">
+                                    <li>
+                                        <a href="#">خروجی DC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">سنسور mdf</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">کلید زیر سطحی</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">کلید زیر سطحی</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">کلید زیر سطحی</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="product__interaction">
+                        <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'London')">نظرات کاربران</button>
+                            <button class="tablinks" onclick="openCity(event, 'Paris')">پرسش و پاسخ</button>
+                        </div>
+
+                        <div id="London" class="tab-content" style="display: block;">
+                            <div class="product__comment">
+
+                                <div class="product__right">
+                                    <form class="product__form">
+                                        <div class="contact__group">
+                                            <label for="description" class="contact__label">متن نظر</label>
+                                            <textarea type="text" class="contact_input" rows="6"
+                                                id="description"></textarea>
+                                        </div>
+
+                                        <div class="contact__group">
+                                            <button class="contact__button">ارسال نظر</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="product__left">
+                                    <ul class="comment__list">
+                                        <li class="comment__item">
+                                            <h6>پوریا نایب</h6>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+                                                از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                                متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                                                درصد گذشته حال و آینده.</p>
+                                            <div>
+                                                <time>1 اردیبهشت 1404</time>
+                                            </div>
+                                        </li>
+
+                                        <li class="comment__item">
+                                            <h6>پوریا نایب</h6>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+                                                از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                                متنوع با هدف بهبود.</p>
+                                            <div>
+                                                <time>1 اردیبهشت 1404</time>
+                                            </div>
+                                        </li>
+
+                                        <li class="comment__item">
+                                            <h6>پوریا نایب</h6>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+                                                از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون.</p>
+                                            <div>
+                                                <time>1 اردیبهشت 1404</time>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="pagination">
+                                        <ul class="pagination__list">
+                                            <li class="pagination__item">
+                                                <a href="#" class="pagination__link">
+                                                    <i class="ri-arrow-right-double-line"></i>
+                                                </a>
+                                            </li>
+
+                                            <li class="pagination__item">
+                                                <a href="#" class="pagination__link">
+                                                    1
+                                                </a>
+                                            </li>
+
+                                            <li class="pagination__item">
+                                                <a href="#" class="pagination__link">
+                                                    2
+                                                </a>
+                                            </li>
+
+                                            <li class="pagination__item">
+                                                <a href="#" class="pagination__link">
+                                                    <i class="ri-arrow-left-double-line"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="Paris" class="tab-content">
+                            <div class="product__question">
+                                <div class="question__right">
+                                    <form class="product__form">
+                                        <div class="contact__group">
+                                            <label for="name" class="contact__label">نام و نام خانوادگی</label>
+                                            <input type="text" class="contact_input" id="name">
+                                        </div>
+
+                                        <div class="contact__group">
+                                            <label for="phonenumber" class="contact__label">تلفن تماس</label>
+                                            <input type="text" class="contact_input" id="phonenumber">
+                                        </div>
+
+                                        <div class="contact__group">
+                                            <label for="description" class="contact__label">متن نظر</label>
+                                            <textarea type="text" class="contact_input" rows="6"
+                                                id="description"></textarea>
+                                        </div>
+
+                                        <div class="contact__group">
+                                            <button class="contact__button">ارسال پرسش</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="question__left">
+                                    <ul class="comment__list">
+                                        <li class="comment__item">
+                                            <h6>پوریا نایب</h6>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+                                                از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                                متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                                                درصد گذشته حال و آینده.</p>
+                                            <div>
+                                                <time>1 اردیبهشت 1404</time>
+                                            </div>
+
+                                            <ul>
+                                                <li>
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                                    استفاده
+                                                    از طراحان گرافیک است
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="comment__item">
+                                            <h6>پوریا نایب</h6>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+                                                از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                                متنوع با هدف بهبود.</p>
+                                            <div>
+                                                <time>1 اردیبهشت 1404</time>
+                                            </div>
+
+                                            <ul>
+                                                <li>
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                                    استفاده
+                                                    از طراحان گرافیک است
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <div class="pagination">
+                                        <ul class="pagination__list">
+                                            <li class="pagination__item">
+                                                <a href="#" class="pagination__link">
+                                                    <i class="ri-arrow-right-double-line"></i>
+                                                </a>
+                                            </li>
+
+                                            <li class="pagination__item">
+                                                <a href="#" class="pagination__link">
+                                                    1
+                                                </a>
+                                            </li>
+
+                                            <li class="pagination__item">
+                                                <a href="#" class="pagination__link">
+                                                    2
+                                                </a>
+                                            </li>
+
+                                            <li class="pagination__item">
+                                                <a href="#" class="pagination__link">
+                                                    <i class="ri-arrow-left-double-line"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relate">
+                        <div class="relate__container container">
+                            <div class="relate__content">
+                                <div class="relate__swiper swiper">
+                                    <ul class="relate__wrapper swiper-wrapper">
+
+                                        <li class="relate__item swiper-slide">
+                                            <figure class="relate__figure">
+                                                <img src="assets/imgs/products/resepberry-pi.png" alt=""
+                                                    class="relate__img">
+                                            </figure>
+                                            <div class="relate__info">
+                                                <div class="relate__data">
+                                                    <h4 class="relate__name">قطعه کپی سیاه سفید</h4>
+                                                    <h6 class="relate__code">TGR-1015</h6>
+                                                </div>
+
+                                                <div class="relate__price">
+                                                    <span class="relate__new">250,000 تومان</span>
+                                                    <span class="relate__old">160,000 تومان</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="relate__item swiper-slide">
+                                            <figure class="relate__figure">
+                                                <img src="assets/imgs/products/resepberry-pi.png" alt=""
+                                                    class="relate__img">
+                                            </figure>
+                                            <div class="relate__info">
+                                                <div class="relate__data">
+                                                    <h4 class="relate__name">قطعه کپی سیاه سفید</h4>
+                                                    <h6 class="relate__code">TGR-1015</h6>
+                                                </div>
+
+                                                <div class="relate__price">
+                                                    <span class="relate__new">250,000 تومان</span>
+                                                    <span class="relate__old">160,000 تومان</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="relate__item swiper-slide">
+                                            <figure class="relate__figure">
+                                                <img src="assets/imgs/products/resepberry-pi.png" alt=""
+                                                    class="relate__img">
+                                            </figure>
+                                            <div class="relate__info">
+                                                <div class="relate__data">
+                                                    <h4 class="relate__name">قطعه کپی سیاه سفید</h4>
+                                                    <h6 class="relate__code">TGR-1015</h6>
+                                                </div>
+
+                                                <div class="relate__price">
+                                                    <span class="relate__new">250,000 تومان</span>
+                                                    <span class="relate__old">160,000 تومان</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="relate__item swiper-slide">
+                                            <figure class="relate__figure">
+                                                <img src="assets/imgs/products/resepberry-pi.png" alt=""
+                                                    class="relate__img">
+                                            </figure>
+                                            <div class="relate__info">
+                                                <div class="relate__data">
+                                                    <h4 class="relate__name">قطعه کپی سیاه سفید</h4>
+                                                    <h6 class="relate__code">TGR-1015</h6>
+                                                </div>
+
+                                                <div class="relate__price">
+                                                    <span class="relate__new">250,000 تومان</span>
+                                                    <span class="relate__old">160,000 تومان</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="relate__item swiper-slide">
+                                            <figure class="relate__figure">
+                                                <img src="assets/imgs/products/resepberry-pi.png" alt=""
+                                                    class="relate__img">
+                                            </figure>
+                                            <div class="relate__info">
+                                                <div class="relate__data">
+                                                    <h4 class="relate__name">قطعه کپی سیاه سفید</h4>
+                                                    <h6 class="relate__code">TGR-1015</h6>
+                                                </div>
+
+                                                <div class="relate__price">
+                                                    <span class="relate__new">250,000 تومان</span>
+                                                    <span class="relate__old">160,000 تومان</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="relate__item swiper-slide">
+                                            <figure class="relate__figure">
+                                                <img src="assets/imgs/products/resepberry-pi.png" alt=""
+                                                    class="relate__img">
+                                            </figure>
+                                            <div class="relate__info">
+                                                <div class="relate__data">
+                                                    <h4 class="relate__name">قطعه کپی سیاه سفید</h4>
+                                                    <h6 class="relate__code">TGR-1015</h6>
+                                                </div>
+
+                                                <div class="relate__price">
+                                                    <span class="relate__new">250,000 تومان</span>
+                                                    <span class="relate__old">160,000 تومان</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="swiper-button-prev">
+                                        <i class="ri-arrow-right-s-line"></i>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <i class="ri-arrow-left-s-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <a href="#" id="scroll-up" class="scrollup">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <a href="tel:09120464609" id="phone" class="phone">
+        <i class="ri-phone-line"></i>
+    </a>
+
+    <!-- footer -->
+    <footer id=" footer" class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+
+                <section class="footer__section">
+                    <h4 class="footer__title">خدمات مشتری</h4>
+
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">راهنمای خرید</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">تماس با ما</a>
+
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">ارسال تیکت</a>
+
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">سیاست و قوانین</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="footer__section">
+                    <h4 class="footer__title">درباره ما</h4>
+
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">درباره تگرا</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">اخبار و اطلاعیه</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">فرصت شغلی</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="footer__section">
+                    <h4 class="footer__title">فروش</h4>
+
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">گروه محصولات</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">عمده فروشی</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">مشاوره پیش از فروش</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="footer__data">
+                    <img src="" alt="" class="footer__img">
+
+                    <p class="footer__description">
+                        <i class="ri-map-pin-line"></i>
+                        <span>کرج، جاده ماهدشت، مرکز آموزش عالی امام خمینی</span>
+                    </p>
+                    <hr />
+                    <p class="footer__description">
+                        <i class="ri-customer-service-2-fill"></i> <span>02692108457</span>
+                    </p>
+                    <p class="footer__description">
+                        <i class="ri-phone-line"></i> <span>09120464609</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="footer__copyright">
+                <p>&copy; تمام حقوق مادی و معنوی محفوظ است</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        const swiper = new Swiper('.relate__swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            grabCursor: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                540: {
+                    centeredSlides: true,
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4
+                },
+            }
+        });
+
+    </script>
+</body>
+
+</html>

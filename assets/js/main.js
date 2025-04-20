@@ -53,3 +53,12 @@ if (loginClose) {
         loginContent.classList.remove('show-login')
     })
 }
+
+/*=============== SHOW SCROLL UP ===============*/
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+    this.scrollY >= 150 ? scrollUp.classList.add('active')
+        : scrollUp.classList.remove('active')
+}
+window.addEventListener('scroll', scrollUp)
