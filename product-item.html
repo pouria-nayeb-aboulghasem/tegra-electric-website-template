@@ -215,6 +215,11 @@
                         </ul>
                     </nav>
 
+                    <div class="product__alert">
+                        <i class="ri-alert-fill"></i>
+                        امکان خرید عمده این محصول با چک صیادی ممکن است، جهت اطلاعات بیشتر با ما تماس بگیرید.
+                    </div>
+
                     <div class="product__data">
                         <div class="product__gallery">
                             <figure class="product__figure">
@@ -326,11 +331,17 @@
 
                     <div class="product__interaction">
                         <div class="tab">
-                            <button class="tablinks active" onclick="openCity(event, 'London')">نظرات کاربران</button>
-                            <button class="tablinks" onclick="openCity(event, 'Paris')">پرسش و پاسخ</button>
+                            <button class="tablinks active" onclick="openCity(event, 'comment')">
+                                <i class="ri-chat-2-line"></i>
+                                نظرات کاربران
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'faq')">
+                                <i class="ri-question-answer-line"></i>
+                                پرسش و پاسخ
+                            </button>
                         </div>
 
-                        <div id="London" class="tab-content" style="display: block;">
+                        <div id="comment" class="tab-content" style="display: block;">
                             <div class="product__comment">
 
                                 <div class="product__right">
@@ -414,7 +425,7 @@
                             </div>
                         </div>
 
-                        <div id="Paris" class="tab-content">
+                        <div id="faq" class="tab-content">
                             <div class="product__question">
                                 <div class="question__right">
                                     <form class="product__form">

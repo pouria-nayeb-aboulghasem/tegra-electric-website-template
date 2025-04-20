@@ -217,10 +217,13 @@ img {
   color: var(--white-color);
 }
 
-/* Style the tab content */
 .tab-content {
   display: none;
   padding: var(--space-2);
+}
+
+.tablinks i {
+  margin-left: var(--space-1);
 }
 
 /* breadcrumb */
@@ -1504,6 +1507,18 @@ select {
   margin-block: 4rem;
 }
 
+.product__alert {
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font-size: var(--fs-sm);
+  padding: var(--space-2);
+}
+
+.product__alert i {
+  margin-left: var(--space-1);
+  font-size: var(--fs-md);
+}
+
 .product__data {
   display: grid;
   background-color: var(--white-color);
@@ -1636,7 +1651,7 @@ select {
 .product__button--block {
   width: 100%;
   max-width: 128px;
-  background-color: #1c61e7;
+  background-color: var(--primary-color);
   color: var(--white-color);
 }
 
