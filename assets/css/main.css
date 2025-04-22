@@ -1051,7 +1051,7 @@ relate__code {
   font-size: var(--fs-sm);
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 350px) {
   .special,
   .category,
   .relate {
