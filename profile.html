@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- seo -->
     <title> تگرا الکتریک </title>
@@ -139,6 +140,7 @@
                 </button>
                 <button type="button" id="login-button">
                     <i class="ri-login-box-line"></i>
+                    <!-- <i class="ri-shopping-cart-line"></i> -->
                 </button>
                 <a href="cart.html" id="cart-button">
                     <span class="cart__badge">2</span>
@@ -196,108 +198,86 @@
     </div>
 
     <main id="main" class="main">
-        <div class="article">
-            <div class="article__container container">
-                <article class="article__content">
 
-                    <nav class="breadcrumb">
-                        <ul class="breadcrumb__list">
-                            <li class="breadcrumb__item">
-                                <a href="index.html" class="breadcrumb__link">خانه</a>
+        <div class="profile">
+            <div class="profile__container container">
+
+                <nav class="breadcrumb">
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a href="index.html" class="breadcrumb__link">خانه</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            پروفایل
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="profile__content">
+
+                    <div class="profile__accessibility">
+                        <ul class="profile__list">
+                            <li class="profile__item">
+                                <a href="#" class="profile__link">
+                                    مشاهده اطلاعات کاربری
+                                </a>
                             </li>
-                            <li class="breadcrumb__item">
-                                مقاله یا ویدیو در این قسمت تیتر مقاله می باشد
+
+                            <li class="profile__item">
+                                <a href="#" class="profile__link">
+                                    تاریخچه سفارشات
+                                </a>
+                            </li>
+
+                            <li class="profile__item">
+                                <a href="#" class="profile__link">
+                                    ویرایش اطلاعات کاربری
+                                </a>
                             </li>
                         </ul>
-                    </nav>
-
-                    <h1 class="article__title">
-                        مقاله یا ویدیو در این قسمت تیتر مقاله می باشد
-                    </h1>
-
-                    <div class="article__info">
-                        <div class="article__side">
-                            <figure class="article__figure">
-                                <img src="assets/imgs/blog/conversation.jpg" alt="" class="article__img">
-                            </figure>
-
-                            <aside class="article__meta">
-
-                                <section class="article__section">
-                                    <h6 class="article__name">دسته بندی</h6>
-                                    <p class="article__value">اخبار</p>
-                                </section>
-
-                                <section class="article__section">
-                                    <h6 class="article__name">تاریخ</h6>
-                                    <p class="article__value">4 فروردین 1404</p>
-                                </section>
-
-                                <section class="article__section">
-                                    <h6 class="article__name">نویسنده</h6>
-                                    <p class="article__value">شیخ حسنی</p>
-                                </section>
-
-                            </aside>
-                        </div>
-                        <div class="article__data">
-
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
-                                است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
-                                فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-                                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
-                                طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
-                                فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
-                                موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
-                                دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
-                                گیرد.</p>
-
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
-                                است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
-                                فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-                                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
-                                طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی
-                            </p>
-
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
-                                است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
-                                فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-                                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
-                                طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
-                                فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
-                                موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
-                                دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
-                                گیرد.</p>
-
-                            <hr>
-
-                            <section class="article__tag">
-                                <h4>برچسب ها</h4>
-
-                                <ul class="article__list">
-                                    <li class="article__item">
-                                        <a href="#" class="article__link">
-                                            تجهیزات الکترونیک
-                                        </a>
-                                    </li>
-                                    <li class="article__item">
-                                        <a href="#" class="article__link">
-                                            تراشه الکترونیکی
-                                        </a>
-                                    </li>
-                                    <li class="article__item">
-                                        <a href="#" class="article__link">
-                                            قطعه بلوتوث
-                                        </a>
-                                    </li>
-                                </ul>
-                            </section>
-
-                        </div>
                     </div>
-                </article>
+
+
+                    <div class="profile__data">
+
+                        <table class="table table--profile">
+                            <caption>اطلاعات کاربری</caption>
+
+                            <tr>
+                                <th>شماره تلفن</th>
+                                <td>09354425459</td>
+                            </tr>
+                            <tr>
+                                <th>نام و نام خانوادگی</th>
+                                <td>پوریا نایب</td>
+                            </tr>
+                            <tr>
+                                <th>پست الکترونیک</th>
+                                <td>puria-nayeb@outlook.com</td>
+                            </tr>
+                            <tr>
+                                <th>آدرس</th>
+                                <td>تهران - شریعتی</td>
+                            </tr>
+                            <tr>
+                                <th>کد پستی</th>
+                                <td>021 - 25455445</td>
+                            </tr>
+                            <tr>
+                                <th>تاریخ ثبت نام</th>
+                                <td>2025/10/11</td>
+                            </tr>
+                            <tr>
+                                <th>تاریخ آخرین ورود</th>
+                                <td>2025/10/15</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
             </div>
         </div>
+
     </main>
 
     <a href="#" id="scroll-up" class="scrollup">
