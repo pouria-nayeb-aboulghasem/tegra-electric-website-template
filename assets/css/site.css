@@ -152,6 +152,7 @@ img {
 
 .showcase__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: var(--space-3);
   font-size: 2vmax;
@@ -172,7 +173,6 @@ img {
 
 @media screen and (max-width: 512px) {
   .showcase__list {
-    font-size: 1.5vmax;
     list-style-type: none;
   }
 }
