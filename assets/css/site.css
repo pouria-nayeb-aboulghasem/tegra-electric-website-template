@@ -192,7 +192,7 @@ img {
 
 .solution__header {
   font-size: 2vmax;
-  padding-bottom: var(--space-5);
+  padding-bottom: 4rem;
 }
 
 .solution__header span {
@@ -211,6 +211,17 @@ img {
   max-width: 268px;
   border: 1px solid #0088cc50;
   padding: var(--space-4) var(--space-2);
+  transition: 0.4s;
+}
+
+.solution__item:hover,
+.solution__item:hover .solution__icon,
+.solution__item:hover .solution__description {
+  color: var(--white-color);
+}
+
+.solution__item:hover {
+  background-color: var(--primary-color);
 }
 
 .solution__link {
