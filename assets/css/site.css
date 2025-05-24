@@ -195,6 +195,10 @@ img {
   padding-bottom: var(--space-5);
 }
 
+.solution__header span {
+  color: var(--primary-color);
+}
+
 .solution__list {
   display: flex;
   flex-wrap: wrap;
