@@ -170,6 +170,13 @@ img {
   color: #eee;
 }
 
+@media screen and (max-width: 512px) {
+  .showcase__list {
+    font-size: 1.5vmax;
+    list-style-type: none;
+  }
+}
+
 @media screen and (min-width: 2048px) {
   body {
     zoom: 1.5;
