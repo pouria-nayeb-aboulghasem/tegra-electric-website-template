@@ -167,7 +167,7 @@ img {
   font-size: 1.75vmax;
   margin-top: var(--space-4);
   text-align: center;
-  color: #eee;
+  color: #aaa;
 }
 
 @media screen and (max-width: 512px) {
