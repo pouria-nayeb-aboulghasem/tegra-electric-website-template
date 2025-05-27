@@ -52,7 +52,7 @@
                                     <ul class="good__list good__list--imgs">
                                         <li class="good__item">
                                             <img src="assets/imgs/products/resepberry-pi.png" alt=""
-                                                class="good__thumbnail">
+                                                class="good__thumbnail active">
                                         </li>
                                         <li class="good__item">
                                             <img src="assets/imgs/products/resepberry-pi.png" alt=""
@@ -192,6 +192,30 @@
             }
         });
 
+    </script>
+    <script>
+        const productImg = document.getElementById("good-img");
+        const productThumbnailImgs = document.querySelectorAll(".good__thumbnail");
+        const firstThumbnailImg = document.querySelector(".good__thumbnail");
+
+        firstThumbnailImg.classList.add("active");
+
+        function removeActiveClassFromThumbnailImgs() {
+            productThumbnailImgs.forEach(productThumbnailImg => {
+                productThumbnailImg.classList.remove("active");
+            });
+        }
+
+        if (productThumbnailImgs) {
+            productThumbnailImgs.forEach(productThumbnailImg => {
+                productThumbnailImg.addEventListener("click", () => {
+                    removeActiveClassFromThumbnailImgs();
+
+                    productImg.src = productThumbnailImg.src;
+                    productThumbnailImg.classList.add("active");
+                });
+            });
+        }
     </script>
 </body>
 

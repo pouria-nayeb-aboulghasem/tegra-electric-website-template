@@ -88,12 +88,13 @@ button {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-3);
+  gap: var(--space-1);
 }
 
 .tab button {
   display: inline-flex;
   width: 128px;
+  font-size: var(--fs-sm);
   padding: var(--space-1);
   border: 1px solid var(--text-color);
   cursor: pointer;
@@ -112,6 +113,13 @@ button {
 
 .tablinks i {
   margin-left: var(--space-1);
+}
+
+@media screen and (max-width: 512px) {
+  .tab button {
+    width: 100px;
+    font-size: 0.65rem;
+  }
 }
 
 /* breadcrumb */
@@ -756,19 +764,30 @@ button {
 
 .good__content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   align-items: center;
   gap: var(--space-5);
 }
 
 .good__figure {
   margin-bottom: var(--space-3);
+  padding: var(--space-2);
 }
 
 .good__list--imgs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-3);
+}
+
+.good__thumbnail {
+  cursor: pointer;
+}
+
+.good__thumbnail.active {
+  padding: 0.25rem;
+  opacity: 0.75;
+  border: 1px solid #333;
 }
 
 .good__header {
@@ -833,6 +852,13 @@ button {
   padding: var(--space-3);
   background-color: var(--white-color);
   color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .good__content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-5);
+  }
 }
 
 /* 2k */
