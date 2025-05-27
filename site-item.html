@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <!-- general -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <!-- seo -->
+    <title> تگرا الکتریک </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+</head>
+
+<body>
+
+    <main id="main" class="main">
+
+        <div class="product">
+            <div class="product__container container">
+                <div class="product__content">
+
+                    <nav class="breadcrumb">
+                        <ul class="breadcrumb__list">
+                            <li class="breadcrumb__item">
+                                <a href="index.html" class="breadcrumb__link">خانه</a>
+                            </li>
+                            <li class="breadcrumb__item">
+                                <a href="site-category.html" class="breadcrumb__link">آینه هوشمند</a>
+                            </li>
+                            <li class="breadcrumb__item">
+                                قطعه کپی سیاه سفید
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="good">
+                        <div class="good__container container">
+                            <div class="good__content">
+
+                                <div class="good__gallery">
+
+                                    <figure class="good__figure">
+                                        <img src="assets/imgs/products/resepberry-pi.png" alt="" class="good__img"
+                                            id="good-img">
+                                    </figure>
+
+                                    <ul class="good__list good__list--imgs">
+                                        <li class="good__item">
+                                            <img src="assets/imgs/products/resepberry-pi.png" alt=""
+                                                class="good__thumbnail">
+                                        </li>
+                                        <li class="good__item">
+                                            <img src="assets/imgs/products/resepberry-pi.png" alt=""
+                                                class="good__thumbnail">
+                                        </li>
+                                        <li class="good__item">
+                                            <img src="assets/imgs/products/resepberry-pi.png" alt=""
+                                                class="good__thumbnail">
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="good__info">
+                                    <header class="good__header">
+                                        <h1 class="good__title">ساعت</h1>
+                                        <p class="good__description">انتقال اطلاعات به صورت Real Time</p>
+                                        <span class="good__category">اتاق تمیز</span>
+                                    </header>
+                                    <div class="good__data">
+                                        <p class="good__color">
+                                            <b>رنگ</b>: <span>سفید</span>
+                                        </p>
+
+                                        <span class="good__available">
+                                            <i class="ri-check-double-line"></i>
+                                            موجود
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="good__specification">
+                                    <ul class="good__list good__list--specs">
+                                        <li class="good__item">
+                                            <i class="ri-medal-line good__icon"></i>
+                                            <span class="good__value">یکسال گارانتی</span>
+                                        </li>
+                                        <li class="good__item">
+                                            <i class="ri-number-5 good__icon"></i>
+                                            <span class="good__value">پنج سال خدمات پس از فروش</span>
+                                        </li>
+                                        <li class="good__item">
+                                            <i class="ri-infinity-line good__icon"></i>
+                                            <span class="good__value">پشتیبانی مادام العمر</span>
+                                        </li>
+                                        <li class="good__item">
+                                            <i class="ri-tools-line good__icon"></i>
+                                            <span class="good__value">نصب و راه اندازی</span>
+                                        </li>
+                                        <li class="good__item">
+                                            <i class="ri-hq-line good__icon"></i>
+                                            <span class="good__value">منطبق با استانداردها</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__interaction">
+                        <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'specification')">
+                                <i class="ri-information-line"></i>
+                                توضیحات
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'technical')">
+                                <i class="ri-list-check"></i>
+                                مشخصات فنی
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'catalog')">
+                                <i class="ri-download-cloud-line"></i>
+                                بروشور
+                            </button>
+                        </div>
+
+                        <div id="specification" class="tab-content" style="display: block;">
+                            توضیحات
+                        </div>
+
+                        <div id="technical" class="tab-content">
+                            مشخصات فنی
+                        </div>
+
+                        <div id="catalog" class="tab-content">
+                            بروشور
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <p class="footer__copyright">تمام حقوق مادی و معنوی سایت <span>گیتو</span> محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        const swiper = new Swiper('.relate__swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            grabCursor: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                540: {
+                    centeredSlides: true,
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4
+                },
+            }
+        });
+
+    </script>
+</body>
+
+</html>
