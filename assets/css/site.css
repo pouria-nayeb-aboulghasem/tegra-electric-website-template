@@ -717,9 +717,9 @@ button {
 }
 
 .subgroup__list {
-  display: flex;
+  display: grid;
   justify-content: center;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-3);
 }
 
@@ -732,6 +732,7 @@ button {
   flex-direction: column;
   align-items: center;
   gap: var(--space-3);
+  font-size: var(--fs-sm);
   color: var(--white-color);
   padding: 3.5rem 3rem;
   transition: 0.4s;
@@ -749,6 +750,16 @@ button {
 .subgroup__icon {
   color: var(--primary-color);
   font-size: 3.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .subgroup__list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .subgroup__link {
+    font-size: var(--fs-md);
+  }
 }
 
 /* product */
