@@ -122,6 +122,18 @@ button {
   }
 }
 
+/* alert */
+
+.alert {
+  width: 100%;
+  padding: var(--space-1);
+}
+
+.alert--info {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
 /* breadcrumb */
 .breadcrumb {
   margin-bottom: var(--space-3);
@@ -724,6 +736,10 @@ button {
   right: var(--space-2);
   font-size: 0.75rem;
   color: #aaa;
+}
+
+.subgroup__img {
+  width: 100%;
 }
 
 .subgroup__list {
