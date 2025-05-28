@@ -711,9 +711,19 @@ button {
 /* subgroup */
 
 .subgroup {
+  position: relative;
   margin-block: 4rem;
   background-color: var(--secondary-color);
   padding-block: var(--space-5);
+}
+
+.subgroup::after {
+  content: "زیر دسته بندی ها";
+  position: absolute;
+  top: var(--space-1);
+  right: var(--space-2);
+  font-size: 0.75rem;
+  color: #aaa;
 }
 
 .subgroup__list {
