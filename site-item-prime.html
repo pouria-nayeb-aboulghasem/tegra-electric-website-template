@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 1200px;
+            padding-inline: 1rem;
+            margin: 1.5rem auto;
+        }
+
+        .section {
+            counter-reset: section;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-block: 1.5rem 1rem;
+        }
+
+        p {
+            margin-block: 0.5rem;
+        }
+
+        .section h3::before {
+            counter-increment: section;
+            content: counter(section) " ";
+        }
+
+        .section p {
+            text-align: justify;
+            font-size: 1rem;
+            color: #111;
+        }
+
+        .introduction {
+            display: grid;
+            grid-template-columns: 256px 1fr;
+            background-color: #5bb1dd;
+            color: #111;
+            padding: 2.5rem;
+            border-radius: 1rem;
+        }
+
+        .introduction div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .introduction i {
+            font-size: 10rem;
+            color: #fff;
+        }
+
+        .introduction h1 {
+            font-size: 2.5rem;
+        }
+
+        .category h2 {
+            font-size: 2rem;
+        }
+
+        .subcategory h3 {
+            font-size: 1.5rem;
+        }
+
+        .subcategory ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5rem;
+            list-style-type: none;
+            margin-block: 3.5rem 2.5rem;
+        }
+
+        .subcategory li {
+            position: relative;
+            width: 256px;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(0, 0, 0, 0.1);
+            transition: 0.4s;
+        }
+
+        .circle {
+            position: absolute;
+            top: calc(50% - 110px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 64px;
+            height: 64px;
+            background-color: #0088cc;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .subcategory li:hover {
+            background-color: #0088cc;
+        }
+
+        .subcategory li:hover .circle {
+            background-color: #ffffff;
+            color: #0088cc;
+            border: 1px solid #0088cc;
+        }
+
+        .subcategory li:hover h4,
+        .subcategory li:hover p {
+            color: #ffffff;
+        }
+
+        .subcategory li h4 {
+            font-size: 1.5rem;
+            color: #0088cc;
+            margin-top: 4rem;
+        }
+
+        .subcategory li p {
+            text-align: center;
+        }
+
+        .divider {
+            width: 100%;
+            max-width: 90%;
+            height: 1px;
+            margin-inline: auto;
+            margin-block: 2.5rem;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5), -2px -2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .why h5 {
+            font-size: 1.5rem;
+        }
+
+        .relate h6 {
+            font-size: 1.5rem;
+        }
+
+        .relate ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 1.5rem;
+        }
+
+        .relate li {
+            width: 256px;
+            min-height: 84px;
+        }
+
+        .relate a {
+            position: relative;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+            padding: 0.5rem;
+            color: #222;
+            border-top: 2px solid #0088cc;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+
+        .relate span {
+            font-size: 1.25rem;
+        }
+
+        .relate i {
+            position: absolute;
+            font-size: 3.5rem;
+            left: 0.25rem;
+            color: rgba(0, 0, 0, 0.25);
+        }
+
+        .relate a:hover {
+            background-color: #0088cc;
+        }
+
+        .relate a:hover span {
+            display: none;
+        }
+
+        .relate a:hover i {
+            color: #ffffff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media screen and (max-width: 768px) {
+            .introduction {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .introduction p {
+                text-align: center;
+            }
+
+            .relate ul {
+                justify-content: center;
+            }
+        }
+    </style>
+    <title>Site product template</title>
+</head>
+
+<body>
+    <main id="main" class="main">
+        <div class="section">
+
+            <nav class="breadcrumb">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a href="site.html" class="breadcrumb__link">خانه</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        اینترلاک
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="introduction">
+                <div>
+                    <i class="ri-smartphone-line"></i>
+                </div>
+                <section>
+                    <h1>اینترلاک چیست؟</h1>
+                    <p>در طراحی اتاق های تمیز فضاهایی به نام اینترلاک جهت جداسازی و جلوگیری از ورود و خروج ذرات و یا
+                        اختلاط
+                        هوای
+                        دو یا چند بخش با یکدیگر طراحی و ساخته می شوند. اصول کارکرد اینترلاک ها بر ایجاد اختلاف فشار مثبت
+                        و
+                        یا
+                        منفی است که در سه نوع cascade, sink, bubble با توجه به استراتژی و نیازمندی های موجود طراحی می
+                        گردند.
+                        در
+                        زمان بهره برداری از اتاق تمیز به منظور ضمانت عملکرد درست اینترلاک مطابق با طراحی های انجام
+                        گرفته،
+                        نیازمند پیاده سازی و نصب سیستم اینترلاک (Interlock) بر روی درب های اینترلاک هستیم. این سیستم
+                        عموماً
+                        در
+                        اتاق های تمیز داروسازی، تجهیزات پزشکی، صنایع غذایی، هسته ای، نظامی، صنایع میکرو الکترونیک و
+                        آزمایشگاه
+                        های میکروبی نصب می گردد تا به کمک منطقی خاص وضعیت باز و بسته شدن درهای اینترلاک را کنترل و
+                        مدیریت
+                        کند.
+                        منطق کلی در تمامی مدل ها به این صورت است که چنانچه دری از یک اینترلاک باز شود درهای وابسته به در
+                        مذکور
+                        در امکان باز شدن نداشته باشد.</p>
+                </section>
+            </div>
+
+            <article class="category">
+                <h2>اینترلاک گیتو</h2>
+                <p>اینترلاک های گیتو در دو ساختار طراحی و تولید شده اند. سری شاسی دار مناسب نصب در تمامی انواع اینترلاک
+                    ها
+                    مانند
+                    PAL, MAL, PassBox و همچنین سری بدون شاسی دارای چراغ سیگنال توکار مناسب نصب در اینترلاک های MAL و
+                    Pass
+                    Box
+                    است. سری شاسی دار در بخش شاسی ها به سه مدل شاسی لمسی، شاسی بدون تماس و شاسی مکانیکی تقسیم می شوند که
+                    مشتری
+                    با توجه به نیازمندی های خود می تواند هر کدام از شاسی ها را انتخاب و استفاده کند. اینترلاک های گیتو
+                    در
+                    مدل
+                    های دو تا هفت در طراحی و تولید شده اند که به صورت ترکیب با هم می توانند تعداد نامحدود در اینترلاک
+                    اتاق
+                    تمیز
+                    را کنترل کنند و همچنین امکان اتصال به دستگاه های کنترل تردد به صورت یکپارچه جهت مدیریت تردد پرسنل به
+                    کمک
+                    کارت و کد در کنار کنترل اینترلاک ها را دارند.</p>
+
+                <section class="subcategory">
+                    <h3>
+                        اینترلاک شاسی دار
+                    </h3>
+                    <p>این نوع اینترلاک (سری ILX) شامل کنترلر، قفل های شفتی و یا مگنتی، شاسی ها، آداپتور و سوکت های نصب
+                        است.
+                        سه
+                        نوع شاسی امکان اتصال به این سری از اینترلاک را دارند:</p>
+
+                    <ul>
+                        <li>
+                            <div class="circle"><i class="ri-hand"></i></div>
+                            <h4>شاسی لمسی</h4>
+                            <p>که با لمس بر روی پنل شاسی بدون وجود هرگونه قطعه مکانیکی عمل می کند و دارای نوار LED دو
+                                رنگ
+                                جهت
+                                اعلام وضعیت اینترلاک است.</p>
+                        </li>
+
+                        <li>
+                            <div class="circle"><i class="ri-signal-tower-line"></i></div>
+                            <h4>شاسی بدون تماس</h4>
+                            <p>که با نزدیک کردن دست به شاسی در فاصله بین 4 تا 15 سانتیمتری (قابل تنظیم) به شاسی عمل می
+                                کند و
+                                دارای نوار LED دو رنگ جهت اعلام وضعیت اینترلاک است.</p>
+                        </li>
+
+                        <li>
+                            <div class="circle"><i class="ri-donut-chart-line"></i></div>
+                            <h4>شاسی مکانیکی</h4>
+                            <p>دارای کلید های استیل مخصوص بر روی پنل شاسی است و دارای نوار LED تک رنگ جهت اعلام وضعیت
+                                عملکرد
+                                اینترلاک است.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <p>این سری از اینترلاک امکان پیکربندی در دو حالت Normally Open و Normally Close را دارا بوده و همچنین در
+                    صورت نیاز به استریل سازی فضای اینترلاک امکان فرمان به لامپ های ماوراء بنفش در این نوع اینترلاک وجود
+                    داشته و می توان زمان تاخیر برای استریل سازی را بر روی کنترلر آن تنظیم کرد. اینترلاک های سری ILx جهت
+                    ایجاد هشدار صوتی دارای بازر داخلی بوده و امکان اتصال به آژیر های خارجی را نیز به منظور ایجاد صدای
+                    بلندتر
+                    دارند. همه انواع شاسی اینترلاک های گیتو هوشمند بوده و نیازی به استفاده از کلید های اضطراری قدیمی و
+                    مرسوم
+                    Break glass ندارند و با لمس طولانی شاسی های هوشمند می توان وضعیت اضطراری و یا بازگشت به حالت عادی را
+                    ایجاد کرده و از نصب شاسی های Break glass که مناسب اتاق تمیز نیستند هم اجتناب کرد. کنترلر های
+                    اینترلاک
+                    گیتو امکان مدیریت اینترلاک های 2 تا 7 در را دارا هستند و می توانند به کمک ترکیب با هم تعداد نامحدود
+                    درب
+                    را در اینترلاک های دارویی کنترل کنند. منطق اینترلاک و ارتباط بین درب ها بر روی کنترلرها در هنگام نصب
+                    قابل برنامه ریزی و تنظیم است.</p>
+
+                <section class="subcategory">
+                    <h3>
+                        اینترلاک بدون شاسی
+                    </h3>
+                    <p>این نوع اینترلاک ها (سری IL2S) شامل کنترلر، قفل شفتی، چراغ سیگنال توکار دو رنگ، آداپتور و سوکت
+                        های
+                        نصب هستند. اینترلاک IL2S نوع اقتصادی تر و کم هزینه تر نسبت به اینترلاک های شاسی دار بوده و تنها
+                        به
+                        صورت Normally Open پیکربندی شده و مناسب نصب در پس باکس ها در اتاق تمیز هستند. این نوع اینترلاک
+                        نیازی
+                        به شاسی های مرسوم نداشته و جهت اعلام وضعیت اینترلاک از چراغ سیگنال دو رنگ مخصوص اینترلاک استفاده
+                        می
+                        کند.</p>
+                </section>
+
+            </article>
+
+            <div class="divider"></div>
+
+            <article class="why">
+                <h5>چرا اینترلاک های گیتو؟</h5>
+                <p>اینترلاک های طراحی و تولید شده گیتو مخصوص نصب در Cleanroom های صنعت داروسازی و تجهیزات پزشکی است و
+                    طراحی
+                    آن حاصل سال ها تجربه حضور گیتو در این صنعت و آشنایی با چالش های موجود است به گونه ای که تمامی
+                    نیازمندی
+                    های موجود در صنعت داروسازی را با نگاه به ملاحظات GMP برآورده می کند. از طرفی اینترلاک های گیتو از
+                    PLC
+                    استفاده نکرده و هزینه تعمیر و نگهداری به شدت پایینی دارند و در صورت استفاده صحیح مطابق با دستورالعمل
+                    ها
+                    تا سال ها بدون هزینه سرویس دهی می کنند. همچنین با توجه به طراحی منحصر به فرد مطابق با شرایط اتاق های
+                    تمیز، نصب راحتی داشته و در تمامی شرایط Cleanroom های مختلف قابل اجرا هستند. علیرغم وجود منطق ساده
+                    باید
+                    توجه داشت که سیستم اینترلاک مورد استفاده مداوم و دائمی پرسنل تولید و آزمایشگاه ها است و می بایست از
+                    طراحی الکترونیکی قدرتمند و صنعتی بهره ببرند و همچنین کیفیت تمامی قطعات مانند قفل ها در کارکرد صحیح
+                    اینترلاک تاثیر بسزایی دارد و گیتو به کمک تجربه و دانش خود توانسته موارد ذکر شده بالا را در طراحی های
+                    خود
+                    لحاظ کند.</p>
+            </article>
+
+            <div class="relate">
+                <h6>محصولات این راهکار</h6>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>اینترلاک</span>
+                            <i class="ri-logout-box-r-line"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>کنترل تردد</span>
+                            <i class="ri-fingerprint-line"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>تجهیزات جانبی</span>
+                            <i class="ri-briefcase-2-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <p class="footer__copyright">تمام حقوق مادی و معنوی سایت <span>تکین الکترونیک ویدا</span> محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
